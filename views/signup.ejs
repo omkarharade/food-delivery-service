@@ -1,0 +1,36 @@
+<%- include('partials/signup-header') %>
+
+<div class="signup-div">
+  <h1>Enter details to sign-up</h1>
+  <div class="form">
+
+    <form action="/signup" method="post">
+      <div class="text-box">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Name">
+      </div>
+      <div class="text-box">
+        <label for="phoneNo">Phone Number</label>
+        <input type="number" class="form-control" name="phoneNo" placeholder="+91 **********">
+      </div>
+      <div class="text-box">
+        <label for="floatingPassword">Address</label>
+        <input type="text" class="form-control" name="address" placeholder="Address">
+      </div>
+      <div class="text-box">
+        <label for="floatingPassword">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+      </div>
+      <div class="text-box">
+        <label for="floatingPassword">Re-Enter Password</label>
+        <input type="password" class="form-control" name="reEnterPassword" placeholder="Re-enter Password">
+      </div>
+
+      <button type="submit" name="login-button">register</button>
+      </form>
+
+    </div>
+  </div>
+
+
+<%- include('partials/footer') %>
